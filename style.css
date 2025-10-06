@@ -3350,6 +3350,9 @@ body {
   .testimonial-container {
     padding: 0 110px;
   }
+  .card-content {
+    max-width: 1200px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -3359,6 +3362,9 @@ body {
 
   .testimonial-heading {
     font-size: 42px;
+  }
+  .card-content {
+   max-width: 1000px;
   }
 }
 
@@ -3382,6 +3388,7 @@ body {
   .card-content {
     padding: 30px;
     gap: 25px;
+    max-width: 830px;
   }
 
   .client-photo {
