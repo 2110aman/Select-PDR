@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT DDR</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="custom-navbar">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Desktop Navigation -->
+          <div class="desktop-nav">
+            <!-- First Section: Navigation Links -->
+            <div class="nav-menu-section">
+              <div class="nav-links-container">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+                <a href="#coming-soon" class="nav-link">Coming Soon</a>
+              </div>
+            </div>
+
+            <!-- Second Section: Logo -->
+            <div class="logo-section">
+              <div class="logo-container">
+                <img src="images/main-logo.png" alt="Logo" />
+              </div>
+            </div>
+
+            <!-- Third Section: Action Buttons -->
+            <div class="action-buttons-section">
+              <div class="action-buttons-container">
+                <button class="btn btn-appointment">
+                  Schedule an Appointment
+                </button>
+                <button class="btn btn-signup">Sign Up</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <div class="mobile-nav">
+            <div class="mobile-logo-section">
+              <div class="logo-container">
+                <img src="images/main-logo.png" alt="Logo" />
+              </div>
+            </div>
+
+            <div class="mobile-menu-toggle-section">
+              <button class="hamburger-menu" id="hamburgerMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-logo">
+            <img src="images/main-logo.png" alt="Logo" />
+          </div>
+          <button class="mobile-menu-close" id="mobileMenuClose">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="mobile-menu-content">
+          <div class="mobile-menu-links">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#faqs" class="mobile-nav-link">FAQs</a>
+            <a href="#coming-soon" class="mobile-nav-link">Coming Soon</a>
+            
+            <div class="mobile-menu-buttons">
+              <button class="btn btn-appointment-mobile">Schedule an Appointment</button>
+              <button class="btn btn-signup-mobile">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-carousel">
+        <!-- Hero Images -->
+        <div
+          class="hero-slide active"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('images/hero-image.jpg'); 
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('images/hero-image.jpg');
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('images/hero-image.jpg');
+          "
+        ></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="container-fluid">
+          <div class="hero-main-content">
+            <div class="hero-text-area">
+              <div class="hero-text-content">
+                <h1 class="hero-headline">  TRANSFORM YOUR VEHICLE WITH
+                  <span >PAINTLESS DENT REPAIR</span>
+                </h1>
+                <p class="hero-description">
+                  Experience top-quality Automotive Paintless Dent Repair
+                  services that restore your vehicle to its original beauty.
+                  Schedule an appointment today!
+                </p>
+                <button class="btn btn-hero-appointment">
+                  Schedule an Appointment
+                </button>
+              </div>
+            </div>
+            <div class="hero-social-area">
+              <div class="social-media-section">
+                <div class="social-icons">
+                  <div class="social-line"></div>
+                  <div class="social-icon">
+                    <img src="images/ri_facebook-fill.svg" alt="Facebook" class="social-icon-img" />
+                  </div>
+                  <div class="social-icon">
+                    <img src="images/instragram.svg" alt="Instagram" />
+                  </div>
+                  <div class="social-icon">
+                    <img src="images/mdi_linkedin.svg" alt="LinkedIn" />
+                  </div>
+                  <div class="social-icon">
+                    <img src="images/mdi_twitter.svg" alt="Twitter" />
+                  </div>
+                  <div class="social-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="hero-navigation">
+              <div class="nav-controls">
+                  <div class="slide-counter">
+                    <span class="current-slide">1</span>/<span
+                      class="total-slides"
+                      >3</span
+                    >
+                  </div>
+                  <div class="navigation-dots">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                  </div>
+                  <div class="navigation-arrows">
+                    <button class="nav-arrow prev-arrow" id="prevSlide">
+                      <img src="images/arrow-previous.svg" alt="Previous" />
+                    </button>
+                    <button class="nav-arrow next-arrow" id="nextSlide">
+                      <img src="images/arrow-next.svg" alt="Next" />
+                      <div class="progress-ring">
+                        <div class="progress-fill"></div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-cards">
+                <!-- Card 1: Paintless Repair -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/card-icon-1.svg" alt="Paintless Repair" />
+                    </div>
+                    <h3 class="feature-title">Paintless Repair</h3>
+                    <p class="feature-description">The dent is repaired by using hand tools to carefully push or pull the metal back into its original shape.</p>
+                </div>
+
+                <!-- Card 2: Maintains Factory Finish -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/card-icon-2.svg" alt="Maintains Factory Finish" />
+                    </div>
+                    <h3 class="feature-title">Maintains Factory Finish</h3>
+                    <p class="feature-description">Paint quality significantly impacts your car's value; paintless repairs help preserve its resale value.</p>
+                </div>
+
+                <!-- Card 3: Zero Deductible -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/card-icon-3.svg" alt="Zero Deductible" />
+                    </div>
+                    <h3 class="feature-title">Zero Deductible</h3>
+                    <p class="feature-description">Get your repairs done with no out-of-pocket costs.</p>
+                </div>
+
+                <!-- Card 4: Lifetime Warranty -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/card-icon-4.svg" alt="Lifetime Warranty" />
+                    </div>
+                    <h3 class="feature-title">Lifetime Warranty</h3>
+                    <p class="feature-description">Our auto repairs come with a Lifetime Warranty, guaranteeing exceptional quality. Any issues will be promptly resolved at no additional cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-container">
+
+
+
+            <!-- Left Content - Visual -->
+            <div class="services-left">
+                <img src="images/left-card.png" alt="Professional car detailing technician" />
+            </div>
+
+            <!-- Right Content - Text -->
+            <div class="services-right">
+                <div class="services-content">
+                    <h2 class="services-title">
+                        Experience <span class="highlight">The Quality And Efficiency</span> Of Our Paintless Dent Repair Services.
+                    </h2>
+                    
+                    <p class="services-description">
+                        At SELECT PDR, we provide top-notch paintless dent repair services that deliver exceptional results. Our skilled technicians use advanced techniques to remove dents without damaging the paint, ensuring a seamless finish.
+                    </p>
+
+                    <!-- Decorative Lines -->
+                    <div class="services-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                    </div>
+
+                    <!-- Benefits List -->
+                    <div class="services-benefits">
+                        <div class="benefit-item">
+                            <img src="images/tick.svg" alt="Save Time and Money" />
+                            <span>Save Time and Money</span>
+                        </div>
+                        <div class="benefit-item">
+                            <img src="images/tick.svg" alt="Restore Your Vehicle's Appearance" />
+                            <span>Restore Your Vehicle's Appearance</span>
+                        </div>
+                        <div class="benefit-item">
+                            <img src="images/tick.svg" alt="Professional and Reliable Service" />
+                            <span>Professional and Reliable Service</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="btn-schedule-appointment">Schedule an Appointment</button>
+
+                    <!-- Experience Badge -->
+                    <div class="experience-badge">
+                        <img src="images/exp.png" alt="Year of experience" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality-section">
+        <div class="quality-container">
+            <!-- Upper Div - Text Content -->
+            <div class="quality-upper">
+                <!-- Left Column - Heading -->
+                <div class="quality-left-column">
+                    <div class="quality-subheading">Quality</div>
+                    <h2 class="quality-main-heading">
+                        Transform Your Vehicle With<br>
+                        Expert Paintless <span class="highlight-text">Dent Repair</span>
+                    </h2>
+                    <div class="quality-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Text and Button -->
+                <div class="quality-right-column">
+                    <p class="quality-description">
+                        Transform your vehicle with expert paintless dent repair. Our skilled technicians use advanced techniques to remove dents and restore your vehicle's appearance to its original condition. With our high-quality service, you can trust us to deliver exceptional results. Don't let dents diminish the beauty of your vehicle. Schedule an appointment today and experience the difference of our paintless dent repair process.
+                    </p>
+                    <button class="btn-quality-appointment">Schedule an Appointment</button>
+                </div>
+            </div>
+
+            <!-- Lower Div - Video Thumbnail -->
+            <div class="quality-lower">
+                <div class="video-thumbnail">
+                    <video id="myVideo" poster="images/video.jpg"> <!-- poster = preview image -->
+                        <source src="/images/videoplayback (1).mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Hero Section -->
+    <section class="cta-hero-section">
+        <div class="cta-hero-content">
+            <h2 class="cta-hero-heading">
+                Get Your <span class="highlight-text">Car</span> Repaired Today
+            </h2>
+            <p class="cta-hero-description">
+                Experience top-quality automotive paintless dent repair services and schedule your appointment today.
+            </p>
+            <div class="cta-hero-divider">
+                <div class="divider-line"></div>
+                <div class="divider-line"></div>
+                <div class="divider-line"></div>
+            </div>
+            <div class="cta-hero-buttons">
+                <button class="btn-cta-primary">Schedule an Appointment</button>
+                <button class="btn-cta-secondary">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="craftsmanship-section">
+        <div class="craftsmanship-container">
+            <!-- Upper Div - Text Content -->
+            <div class="craftsmanship-upper">
+                <h2 class="craftsmanship-heading">
+                    Our Craftsmanship <span class="highlight-text">In Action</span>
+                </h2>
+                <p class="craftsmanship-description">
+                    Discover the stunning results of our automotive paintless dent repair services through captivating photos.
+                </p>
+                <div class="craftsmanship-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <!-- Lower Div - Image Slider -->
+            <div class="craftsmanship-lower">
+                <div class="image-slider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="images/slide-1.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-2.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-3.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-4.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-5.jpg" alt="Automotive repair work" />
+                        </div>
+                        <!-- Duplicate slides for infinite effect -->
+                        <div class="slide">
+                            <img src="images/slide-1.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-2.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-3.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-4.jpg" alt="Automotive repair work" />
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide-5.jpg" alt="Automotive repair work" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Companies Section -->
+    <section class="trusted-section">
+        <div class="trusted-container">
+            <!-- Upper Div - Text Content -->
+            <div class="trusted-upper">
+                <h2 class="trusted-heading">
+                    Trusted By Industry-Leading<br>
+                    <span class="highlight-text">Companies Worldwide</span>
+                </h2>
+                <div class="trusted-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <!-- Lower Div - Logo Slider -->
+            <div class="trusted-lower">
+                <div class="logo-slider">
+                    <div class="logo-track">
+                        <div class="logo-item">
+                            <img src="images/3bcde40300b3328221f433c0abed837c1353c92c.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/58a7bdc49efde066d4fd431a34b7f7f77ad4c0aa.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/5d38f9ca98bc96703150d261544e6c492f74ac11.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/908f291ab3b06963c18e03adebcc5eb1bd0a428d.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/9aed3372888c93ffd5ff2ab454db813438a67e70.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/a4fbac2ea57b1151dd0bc00d2c7c3bf57855ad50.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/da9fa1072f6af36c3be4ecf17a5225623593ace4.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/e3319dc23984af9c9bb183de44012340d6325f7e.png" alt="Car Brand Logo" />
+                        </div>
+                        <!-- Duplicate logos for infinite effect -->
+                        <div class="logo-item">
+                            <img src="images/3bcde40300b3328221f433c0abed837c1353c92c.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/58a7bdc49efde066d4fd431a34b7f7f77ad4c0aa.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/5d38f9ca98bc96703150d261544e6c492f74ac11.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/908f291ab3b06963c18e03adebcc5eb1bd0a428d.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/9aed3372888c93ffd5ff2ab454db813438a67e70.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/a4fbac2ea57b1151dd0bc00d2c7c3bf57855ad50.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/da9fa1072f6af36c3be4ecf17a5225623593ace4.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/e3319dc23984af9c9bb183de44012340d6325f7e.png" alt="Car Brand Logo" />
+                        </div>
+                        <!-- Duplicate logos for infinite effect -->
+                        <div class="logo-item">
+                            <img src="images/3bcde40300b3328221f433c0abed837c1353c92c.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/58a7bdc49efde066d4fd431a34b7f7f77ad4c0aa.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/5d38f9ca98bc96703150d261544e6c492f74ac11.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/908f291ab3b06963c18e03adebcc5eb1bd0a428d.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/9aed3372888c93ffd5ff2ab454db813438a67e70.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/a4fbac2ea57b1151dd0bc00d2c7c3bf57855ad50.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/da9fa1072f6af36c3be4ecf17a5225623593ace4.png" alt="Car Brand Logo" />
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/e3319dc23984af9c9bb183de44012340d6325f7e.png" alt="Car Brand Logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Gallery Section -->
+    <section class="transformation-section">
+        <div class="transformation-container">
+            <!-- Upper Div - Text Content -->
+            <div class="transformation-upper">
+                <h2 class="transformation-heading">
+                    Transformation Gallery: Witness <span class="highlight-text">The Magic!</span>
+                </h2>
+                <p class="transformation-description">
+                    Explore stunning before and after views of our automotive dent repair expertise.
+                </p>
+                <div class="transformation-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+
+                </div>
+            </div>
+
+            <!-- Lower Div - Interactive Gallery -->
+            <div class="transformation-lower">
+                <!-- Left Section -->
+                <div class="transformation-left">
+                    <div class="before-after-container">
+                        <div class="before-after-wrapper">
+                            <div class="before-image">
+                                <img src="images/left-fiv-left-iamge.jpg" alt="Before repair" />
+                            </div>
+                            <div class="after-image">
+                                <img src="images/Rectangle 6.jpg" alt="After repair" />
+                            </div>
+                            <div class="slider-handle">
+                                <div class="slider-button">
+                                    <img src="images/left.svg" alt="Slider Button" />
+                                   <img src="images/right.svg" alt="Slider Button" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="transformation-right">
+                    <div class="before-after-container">
+                        <div class="before-after-wrapper">
+                            <div class="before-image">
+                                <img src="images/right-div-left-image.jpg" alt="Before repair" />
+                            </div>
+                            <div class="after-image">
+                                <img src="images/Rectangle 7.jpg" alt="After repair" />
+                            </div>
+                            <div class="slider-handle">
+                                <div class="slider-button">
+                                    <img src="images/left.svg" alt="Slider Button" />
+                                   <img src="images/right.svg" alt="Slider Button" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <!-- Upper Div - Text Content -->
+            <div class="testimonial-upper">
+                <div class="testimonial-header">
+                    <div class="testimonial-text-content">
+                        <div class="testimonial-subtitle">Clients Testimonial</div>
+                        <h2 class="testimonial-heading">
+                            What Our Clients Say About <span class="highlight-text">SELECT PDR</span>
+                        </h2>
+                        <div class="testimonial-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-line"></div>
+                            <div class="divider-line"></div>
+                        </div>
+                    </div>
+                    <button class="btn-see-all-reviews">See All Reviews</button>
+                </div>
+            </div>
+
+            <!-- Lower Div - Testimonial Cards -->
+            <div class="testimonial-lower">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-track">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card active">
+                            <div class="card-content">
+                                <div class="card-left">
+                                    <div class="client-photo">
+                                        <img src="images/Ellipse 4.png" alt="Client Photo" />
+                                    </div>
+                                    <div class="quote-icon">
+                                        <img src="images/comma.svg" alt="Quote Icon" />
+                                    </div>
+                                </div>
+                                <div class="card-right">
+                                    <div class="rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "SELECT PDR delivered exceptional service! I was blown away by their flawless dent repair. The team was highly professional, and the Lifetime Warranty gives me complete peace of mind. I would highly recommend their services!"
+                                    </p>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Aditya Sahu</h4>
+                                        <p class="client-title">Car Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="card-left">
+                                    <div class="client-photo">
+                                        <img src="images/Ellipse 4.png" alt="Client Photo" />
+                                    </div>
+                                    <div class="quote-icon">
+                                        <img src="images/comma.svg" alt="Quote Icon" />
+                                    </div>
+                                </div>
+                                <div class="card-right">
+                                    <div class="rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "SELECT PDR delivered exceptional service! I was blown away by their flawless dent repair. The team was highly professional, and the Lifetime Warranty gives me complete peace of mind. I would highly recommend their services!"
+                                    </p>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Aditya Sahu</h4>
+                                        <p class="client-title">Car Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="card-left">
+                                    <div class="client-photo">
+                                        <img src="images/Ellipse 4.png" alt="Client Photo" />
+                                    </div>
+                                    <div class="quote-icon">
+                                        <img src="images/comma.svg" alt="Quote Icon" />
+                                    </div>
+                                </div>
+                                <div class="card-right">
+                                    <div class="rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "SELECT PDR delivered exceptional service! I was blown away by their flawless dent repair. The team was highly professional, and the Lifetime Warranty gives me complete peace of mind. I would highly recommend their services!"
+                                    </p>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Aditya Sahu</h4>
+                                        <p class="client-title">Car Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="card-left">
+                                    <div class="client-photo">
+                                        <img src="images/Ellipse 4.png" alt="Client Photo" />
+                                    </div>
+                                    <div class="quote-icon">
+                                        <img src="images/comma.svg" alt="Quote Icon" />
+                                    </div>
+                                </div>
+                                <div class="card-right">
+                                    <div class="rating">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "SELECT PDR delivered exceptional service! I was blown away by their flawless dent repair. The team was highly professional, and the Lifetime Warranty gives me complete peace of mind. I would highly recommend their services!"
+                                    </p>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Aditya Sahu</h4>
+                                        <p class="client-title">Car Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Dots -->
+                    <div class="testimonial-dots">
+                        
+                        <div class="dot active" data-slide="0"></div>
+                           
+                           
+                        <div class="dot" data-slide="1"></div>
+                            
+                        <div class="dot" data-slide="2"></div>
+                             
+                        <div class="dot" data-slide="3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <!-- Left Div - Text Content -->
+            <div class="faq-left">
+                <div class="faq-text-content">
+                    <h2 class="faq-heading">
+                        Frequently Asked <span class="highlight-text">Questions</span>
+                    </h2>
+                    <p class="faq-description">
+                        Find answers to common questions about our services, process, and appointment scheduling.
+                    </p>
+                    <div class="faq-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <button class="btn-faq-appointment">Schedule an Appointment</button>
+                </div>
+            </div>
+
+            <!-- Right Div - FAQ Questions -->
+            <div class="faq-right">
+                <div class="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>What services do you offer?</h3>
+                            <div class="faq-arrow">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a range of Automotive Paintless Dent Repair services, including dent removal, hail damage repair, and more.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How does it work?</h3>
+                            <div class="faq-arrow">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our skilled technicians use specialized tools to massage the metal back to its original shape from behind the panel, without damaging the original paint.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I schedule an appointment online?</h3>
+                            <div class="faq-arrow">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! You can easily schedule an appointment online through our website or by calling us directly. We offer flexible scheduling to fit your needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you provide a warranty?</h3>
+                            <div class="faq-arrow">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We provide a Lifetime Warranty on all our paintless dent repair services. If any repaired dent returns due to workmanship issues, we'll fix it at no additional cost.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does it take?</h3>
+                            <div class="faq-arrow">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most paintless dent repairs can be completed within 1-3 hours, depending on the size and complexity of the damage. We'll provide you with an accurate time estimate during your consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Left Div - Text Content -->
+            <div class="contact-left">
+                <div class="contact-text-content">
+                    <h2 class="contact-heading">
+                        Get In Touch With SELECT PDR -
+                        <span class="highlight-text">Paintless Dent Removal</span>
+                    </h2>
+                    <p class="contact-description">
+                        Let us assist you with your automotive dent repair needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Div - Contact Form -->
+            <div class="contact-right">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Write messages here..." rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send-email">Send Email</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-heading">
+                    Schedule An <span class="highlight-text">Appointment Today!</span>
+                </h2>
+                <p class="cta-description">
+                    Experience our high-quality service and schedule your appointment with SELECT PDR now!
+                </p>
+                <div class="cta-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-cta-primary">Schedule an Appointment</button>
+                    <button class="btn-cta-secondary-1">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <!-- Back to Top -->
+        <div class="back-to-top">
+            <button class="back-to-top-btn">
+                <div class="back-to-top-icon"><img src="images/upPage.png" alt="Back to top"></div>
+                <div class="back-to-top-text">Back to top</div>
+            </button>
+        </div>
+
+        <div class="footer-container">
+            <!-- Left Column - Logo and Social Media -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/footer_logo.png" alt="SELECT PDR Logo" />
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.059 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link linkedin">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Middle Column - Quick Links -->
+            <div class="footer-middle">
+                <h3 class="footer-heading">Quick links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">Services</a></li>
+                    <li><a href="#" class="footer-link">Financing</a></li>
+                    <li><a href="#" class="footer-link">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column - Newsletter -->
+            <div class="footer-right">
+                <h3 class="footer-heading">Subscribe to newsletter</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button class="newsletter-btn">Subscribe</button>
+                </div>
+                <p class="newsletter-description">Stay updated with our latest news and offers.</p>
+            </div>
+        </div>
+
+        <!-- Bottom Section - Copyright and Legal Links -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms and Conditions</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2024 SELECT PDR. All rights reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        const video = document.getElementById("myVideo");
+    
+        video.addEventListener("click", function () {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      </script>
+
+    <!-- Custom JavaScript Files -->
+    <script src="scripts/hero-carousel.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/navbar-hero-scroll.js"></script>
+    <script src="scripts/video-play-button.js"></script>
+    <script src="scripts/craftsmanship-slider.js"></script>
+    <script src="scripts/transformation-slider.js"></script>
+    <script src="scripts/testimonial-carousel.js"></script>
+    <script src="scripts/faq-accordion.js"></script>
+    <script src="scripts/back-to-top.js"></script>
+</body>
+</html>

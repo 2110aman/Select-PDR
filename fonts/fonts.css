@@ -1,0 +1,274 @@
+/* Futura Now Headline Font Family */
+
+/* Thin */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadline.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineMediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Book/Semi-bold equivalent */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Black */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineBlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Black */
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraBlack.ttf") format("truetype");
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaNowHeadline";
+  src: url("FuturaNowHeadlineExtraBlackItalic.ttf") format("truetype");
+  font-weight: 950;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Utility Font Classes */
+.font-futura {
+  font-family: "FuturaNowHeadline", sans-serif;
+}
+
+/* Font Weight Classes */
+.font-thin {
+  font-weight: 100;
+}
+.font-extralight {
+  font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
+}
+.font-extrablack {
+  font-weight: 950;
+}
+
+/* Font Style Classes */
+.font-normal-style {
+  font-style: normal;
+}
+.font-italic {
+  font-style: italic;
+}
+
+/* Combination Classes for Common Uses */
+.futura-headline {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.futura-subheadline {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.futura-body {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.futura-light {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.futura-bold {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.futura-black {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Responsive Typography Classes */
+.text-responsive {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .text-responsive {
+    font-weight: 300;
+  }
+}
+
+/* Logo Font Styles */
+.futura-logo {
+  font-family: "FuturaNowHeadline", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
