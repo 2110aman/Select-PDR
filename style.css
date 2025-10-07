@@ -309,7 +309,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 300px);
   padding: 40px 30px;
 }
 
@@ -2848,6 +2848,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .quality-section {
+    padding: 120px 80px;
+  }
   .quality-container {
     padding: 0 0px;
   }
@@ -2866,8 +2869,11 @@ body {
 }
 
 @media (max-width: 992px) {
+  .quality-section {
+    padding: 80px 40px;
+  }
   .quality-container {
-    padding: 0 30px;
+    /* padding: 0 30px; */
   }
 
   .quality-upper {
@@ -3407,6 +3413,9 @@ body {
   .before-after-container {
     height: 200px;
   }
+ .slide{
+  max-height: 225px;
+ }
 
   .slider-button {
     width: 35px;
@@ -3417,6 +3426,19 @@ body {
     width: 10px;
     height: 10px;
   }
+
+  /* Alternating heights for wave effect */
+.slide-down {
+  max-width: 385px;
+  height: 400px;
+  transform: translateY(30px); /* Move down */
+}
+
+.slide-up {
+  max-width: 385px;
+  height: 400px;
+  transform: translateY(-30px); /* Move up */
+}
 }
 
 /* Responsive Testimonial Section */
@@ -3506,11 +3528,21 @@ body {
   .testimonial-heading {
     font-size: 36px;
   }
+  .testimonial-track{
+   height: 450px;
+  }
+  .testimonial-carousel{
+    width: 100%;
+    height: 500px;
+  }
 
   .card-content {
     flex-direction: column;
     text-align: center;
     padding: 25px;
+    width: 100%;
+    max-height: 450px;
+    height: 450px ;
     gap: 0px;
   }
 
@@ -3539,9 +3571,6 @@ body {
     height: 100%;
   }
 
-  .testimonial-track {
-    height: 320px;
-  }
 
   .testimonial-dots {
     position: static;
@@ -3673,6 +3702,9 @@ body {
   .features-section {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .features-card{
+    width: 100%;
   }
 }
 
@@ -4755,11 +4787,11 @@ body {
   }
 
   .footer-heading {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .footer-link {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .footer-social-link {
@@ -4796,6 +4828,9 @@ body {
   .footer-section {
     padding: 30px 0 0 0;
   }
+  .footer-right{
+    width: 76%;
+  }
 
   .back-to-top {
     margin-bottom: 30px;
@@ -4806,7 +4841,7 @@ body {
   }
 
   .footer-logo img {
-    height: 50px;
+    height: 120px;
   }
 
   .footer-social {
@@ -4819,8 +4854,8 @@ body {
   }
 
   .footer-social-link img {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
   }
 
   .footer-bottom {
