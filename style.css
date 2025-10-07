@@ -108,6 +108,7 @@ body {
   color: #000000;
   /* border: none; */
   border-radius: 0px;
+  font-weight: 500;
   transition: all 0.3s ease;
   line-height: 16px;
   /* gap: 20px; */
@@ -116,7 +117,8 @@ body {
 
 .btn-appointment:hover {
   background: #d49d10;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(232, 172, 18, 0.4);
 }
 
 /* Sign Up Button */
@@ -126,6 +128,7 @@ body {
   border: 1px solid #ffffff;
   font-family: "FuturaNowHeadline", sans-serif;
   border-radius: 0px;
+  font-weight: 500;
   /* line-height: 16px; */
   transition: all 0.3s ease;
   /* gap: 8px; */
@@ -136,6 +139,8 @@ body {
   background: #ffffff;
   color: #000000;
   transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+
 }
 
 /* Desktop Navigation Styles */
@@ -1542,8 +1547,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .benefit-item {
@@ -1591,7 +1596,7 @@ body {
 .experience-badge {
   position: absolute;
   right: 80px;
-  bottom: 40px;
+  bottom: 60px;
 }
 .experience-badge img {
   width: 206px;
@@ -1798,6 +1803,7 @@ body {
 /* Quality Section */
 .quality-section {
   padding: 80px 160px;
+  padding-bottom: 160px;
   background: #ffffff;
 }
 
@@ -1832,7 +1838,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -1844,7 +1850,7 @@ body {
   font-size: 56px;
   width: fit-content;
   line-height: 1.2;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .quality-main-heading .highlight-text {
@@ -2004,7 +2010,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 6px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 26px;
 }
 
 .cta-hero-divider .divider-line {
@@ -2062,7 +2069,7 @@ body {
 /* Craftsmanship Section */
 .craftsmanship-section {
   padding-top: 120px;
-  padding-bottom: 150px;
+  padding-bottom: 190px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -2087,6 +2094,7 @@ body {
 .craftsmanship-upper {
   text-align: center;
   max-width: 800px;
+  
   margin: 0 auto;
 }
 
@@ -2107,9 +2115,13 @@ body {
   color: #515152;
   font-family: "FuturaNowHeadline", sans-serif;
   font-weight: 400;
+  max-width: 540px;
   font-size: 20px;
   line-height: 1.5;
-  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .craftsmanship-divider {
@@ -2145,7 +2157,7 @@ body {
 .slide {
   flex: 0 0 20%; /* Each slide takes 20% of container width */
   margin-right: 20px;
-  border-radius: 8px;
+  border-radius:0px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -2167,7 +2179,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 /* Smooth sliding animation */
@@ -2340,7 +2352,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  margin: 0 0 30px 0;
+  margin: 0 0 22px 0;
 }
 
 .transformation-divider {
@@ -2401,6 +2413,7 @@ body {
 .after-image img {
   width: 100%;
   height: 100%;
+  /* object-position: ; */
   object-fit: cover;
 }
 
@@ -2509,7 +2522,7 @@ body {
   font-family: "FuturaNowHeadline", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   margin: 0 0 15px 0;
 }
@@ -2535,11 +2548,12 @@ body {
 .testimonial-divider .divider-line {
   width: 36px;
   height: 4px;
+  margin-top: 5px;
   background: #e8ac12;
 }
 
 .btn-see-all-reviews {
-  padding: 18px 36px;
+  padding: 18px 23.5px;
   background: #e8ac12;
   color: #2c2c2c;
   border: none;
@@ -2547,6 +2561,7 @@ body {
   font-family: "FuturaNowHeadline", sans-serif;
   font-weight: 500;
   font-size: 18px;
+  line-height: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -2571,8 +2586,8 @@ body {
 .testimonial-track {
   position: relative;
   width: 100%;
-  height: 323px; /* Fixed height to prevent overflow */
-  overflow: hidden; /* Ensure cards don't overflow */
+  height: 330px; /* Fixed height to prevent overflow */
+  overflow: hidden; 
 }
 
 .testimonial-card {
@@ -2664,8 +2679,8 @@ body {
 
 .star {
   color: #e8ac12;
-  font-size: 24px;
-  line-height: 1;
+  font-size: 32px;
+  line-height: 1.5;
 }
 
 .testimonial-text {
@@ -2735,9 +2750,9 @@ body {
   background: #d0d0d0;
 }
 
-.testimonial-dots .dot:hover {
+/* .testimonial-dots .dot:hover {
   background: #e8ac12;
-}
+} */
 
 /* Responsive Services Section */
 @media (max-width: 1800px) {
@@ -3652,7 +3667,7 @@ body {
   }
 
   .star {
-    font-size: 18px;
+    font-size: 50px;
   }
 
   .btn-see-all-reviews {
@@ -3736,7 +3751,7 @@ body {
 }
 
 .faq-text-content {
-  max-width: 500px;
+  max-width: 540px;
 }
 
 .faq-subtitle {
@@ -3761,14 +3776,14 @@ body {
 .faq-description {
   font-size: 20px;
   color: #666666;
-  line-height: 1.6;
-  margin-bottom: 40px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .faq-divider {
   display: flex;
   gap: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }
 
 .faq-divider .divider-line {
@@ -4069,7 +4084,7 @@ body {
   font-size: 20px;
   color: #f3f6f9;
   line-height: 1.6;
-  font-style: italic;
+  /* font-style: italic; */
   margin-bottom: 0;
 }
 
@@ -4263,7 +4278,7 @@ body {
   max-width: 1600px;
   /* margin: 0 auto; */
   width: 100%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4274,10 +4289,9 @@ body {
   width: 100%;
   text-align: center;
   padding: 60px 80px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
   background-color: #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1.51px solid #969698
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
 }
 
 .cta-heading {
@@ -4480,6 +4494,23 @@ body {
   gap: 26px;
   transition: color 0.3s ease;
 }
+.back-to-top-icon{
+  width: 30px;
+  height: 30px;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+.back-to-top-icon img {
+  width: 100%;
+  height: 100%;
+}
+.back-to-top-icon:hover{
+  animation-play-state: paused;
+} 
 
 .back-to-top-text:hover {
   color: #e8ac12;
@@ -4553,7 +4584,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   line-height: 1.5;
-  /* margin-bottom: 30px; */
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -4582,6 +4613,7 @@ body {
 
 .footer-link:hover {
   color: #e8ac12;
+  padding-left: 5px;
 }
 
 .footer-link:hover::after {
@@ -4658,27 +4690,27 @@ body {
 }
 
 .newsletter-description {
-  color: #aaaaaa;
+  color: #FFFFFF;
   font-size: 16px;
   margin: 0;
 }
 
 .footer-bottom {
   border-top: 1px solid #333333;
-  padding: 21px 160px;
+  padding: 21px 0px;
 }
 
 .footer-bottom-container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-copyright p {
-  color: #aaaaaa;
+  color: #FFFFFF;
   font-size: 14px;
   margin: 0;
 }
@@ -4689,7 +4721,7 @@ body {
 }
 
 .legal-link {
-  color: #aaaaaa;
+  color: #FFFFFF;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-size: 14px;

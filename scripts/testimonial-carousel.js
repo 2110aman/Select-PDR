@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove prev class after transition
     setTimeout(() => {
       testimonialCards.forEach((card) => card.classList.remove("prev"));
-    }, 600); // Match transition duration
+    }, 200); // Match transition duration
 
     currentSlide = slideIndex;
   }

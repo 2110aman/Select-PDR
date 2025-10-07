@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   playButton.className = "video-play-overlay";
   playButton.innerHTML = `
     <div class="play-button">
-      <img src="playButton.svg" alt="Play Button" />
+      <img src="images/playButton.svg" alt="Play Button" />
     </div>
   `;
 
@@ -83,5 +83,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial state - show play button
   updatePlayButton();
 });
-
-
