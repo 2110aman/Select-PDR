@@ -821,7 +821,7 @@ body {
   background: #e8ac12;
   color: #000000;
   border: none;
-  padding: 18px 20px;
+  padding: 18px 22.5px;
   font-size: 18px;
   font-weight: 500;
   line-height: 16px;
@@ -2021,7 +2021,7 @@ body {
 }
 
 .btn-cta-primary {
-  padding: 18px 20px;
+  padding: 10.5px 20px;
   background: #e8ac12;
   color: #ffffff;
   border: none;
@@ -4645,7 +4645,7 @@ body {
   background-color: #e8ac12;
   color: #000000;
   border: none;
-  padding: 18px 30px;
+  padding: 12.5px 30px;
   /* border-radius: 6px; */
   font-size: 18px;
   font-weight: 400;
