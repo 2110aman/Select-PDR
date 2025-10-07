@@ -54,6 +54,11 @@ body {
   transition: color 0.3s ease;
   padding: 10px 14px;
 }
+.nav-link-coming-soon {
+  width: 137px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .nav-link:hover {
   color: #e8ac12;
@@ -4060,10 +4065,10 @@ body {
 .form-group textarea {
   width: 100%;
   padding: 15px 20px;
-  background-color: #4a4a4a;
+  background-color: #515152;
   border: 1px solid #666666;
   border-radius: 0px;
-  color: #515152;
+  color: #ffffff;
   font-size: 20px;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -4071,7 +4076,7 @@ body {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #aaaaaa;
+  color:#969698;
 }
 
 .form-group input:focus,
