@@ -5,6 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 0;
   let autoSlideInterval;
 
+  // Function to get responsive timing based on screen size
+  function getResponsiveTiming() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 480) {
+      return 15000; // 15 seconds for mobile
+    } else if (screenWidth <= 768) {
+      return 12000; // 12 seconds for tablet
+    } else if (screenWidth <= 1200) {
+      return 10000; // 10 seconds for small desktop
+    } else {
+      return 8000; // 8 seconds for large desktop
+    }
+  }
+
   // Function to show specific slide
   function showSlide(slideIndex) {
     // Remove active and prev classes from all cards
@@ -25,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove prev class after transition
     setTimeout(() => {
       testimonialCards.forEach((card) => card.classList.remove("prev"));
-    }, 200); // Match transition duration
+    }, 1200); // Match longest transition duration (mobile)
 
     currentSlide = slideIndex;
   }
@@ -38,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to start auto-sliding
   function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 10000); // 10 seconds
+    const timing = getResponsiveTiming();
+    autoSlideInterval = setInterval(nextSlide, timing);
   }
 
   // Function to stop auto-sliding
@@ -78,4 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Handle window focus/blur
   window.addEventListener("focus", startAutoSlide);
   window.addEventListener("blur", stopAutoSlide);
+
+  // Handle window resize to update timing
+  window.addEventListener("resize", function () {
+    stopAutoSlide();
+    startAutoSlide();
+  });
 });
